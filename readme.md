@@ -137,6 +137,7 @@ is a violent psychopath who knows where you live." (С) Martin Golding
    В случае, если у оператора `return` есть значение, оно не должно быть в скобках, кроме случаев, когда это делает код более читаемым, например, при использовании тернарного оператора.
   </p>
   </details>
+
   <details> <summary> &emsp;`if`, `if-else`, `if-else if-else` </summary>
   <p>
    Условный оператор должен иметь следующий вид:
@@ -165,6 +166,7 @@ is a violent psychopath who knows where you live." (С) Martin Golding
    ```
   </p>
   </details>
+
   <details> <summary> &emsp;Циклы </summary>
   <p>
    Цикл `for` должен иметь следующий вид:
@@ -198,6 +200,7 @@ is a violent psychopath who knows where you live." (С) Martin Golding
    ```
   </p>
   </details>
+
   <details> <summary> &emsp;`switch` </summary>
   <p>
    Операторы `case` должны быть описаны на одном уровне с оператором `switch`.
@@ -206,6 +209,7 @@ is a violent psychopath who knows where you live." (С) Martin Golding
    - В случае отсутствия оператора `break` (то есть при необходимости описания "падения в следующий кейс") перед следующим оператором `case` также необходимо оставлять пустую строку.
   </p>
   </details>
+
   <details> <summary> &emsp;`try-catch-finally` </summary>
   <p>
    ```java
@@ -257,6 +261,7 @@ is a violent psychopath who knows where you live." (С) Martin Golding
    Принцип инкапсуляции предполагает, что область видимости объектов должна сводиться к минимуму;
   </p>
   </details>
+
   <details> <summary> &emsp;Переменные и константы </summary>
   <p>
    Избегайте присваивания значений нескольким переменным или константам на одной строке, особенно одним оператором;
@@ -264,47 +269,50 @@ is a violent psychopath who knows where you live." (С) Martin Golding
    Избегайте использования встроенных присваиваний в попытке ускорить исполнение кода, например строку `d = (a = b + c) + r;` необходимо разделить на две операции, сначала присвоив `а`, и затем присвоив `d`;
   </p>
   </details>
+
   <details> <summary> &emsp;Разное </summary>
   <p>
    <details> <summary> &emsp;&emsp;Скобки </summary>
    <p>
-    Используйте скобки для улучшения понимания кода, даже если правильную работу обеспечивает приоритет операторов.
+   Используйте скобки для улучшения понимания кода, даже если правильную работу обеспечивает приоритет операторов.
    </p>
    </details>
+   
    <details> <summary> &emsp;&emsp;Возвращаемые значения </summary>
    <p>
-    Избегайте дополнительного кода, если базовый функционал соответствует намерениям, например, вместо
-    ```java
-    if (booleanExpression) {
-        return true;
-    } else {
-        return false;
-    }
-    ```
-    следует использовать
-    ```java
-    return booleanExpression;
-    ```
+   Избегайте дополнительного кода, если базовый функционал соответствует намерениям, например, вместо
+   ```java
+   if (booleanExpression) {
+       return true;
+   } else {
+       return false;
+   }
+   ```
+   следует использовать
+   ```java
+   return booleanExpression;
+   ```
 
-    Аналогично, вместо
-    ```java
-    if (condition) {
-        return x;
-    }
-    return y;
-    ```
-    лучше использовать
-    ```java
-    return (condition ? x : y);
-    ```
+   Аналогично, вместо
+   ```java
+   if (condition) {
+       return x;
+   }
+   return y;
+   ```
+   лучше использовать
+   ```java
+   return (condition ? x : y);
+   ```
    </p>
    </details>
+
    <details> <summary> &emsp;&emsp;Специальные комментарии </summary>
    <p>
-    Используйте в комментарии флаги
-    - `ХХХ` если какой-то участок работает, но выглядит ошибочным;
-    - `FIXME` если что-то выглядит ошибочным и не работает;
-    - `TODO` если участок кода требует доработки.
+   Используйте в комментарии флаги
+   - `ХХХ` если какой-то участок работает, но выглядит ошибочным;
+   - `FIXME` если что-то выглядит ошибочным и не работает;
+   - `TODO` если участок кода требует доработки.
    </p>
    </details>
   </p>
