@@ -58,6 +58,7 @@ is a violent psychopath who knows where you live." (С) Martin Golding
   - методы;
  </p>
  </details>
+
  <details> <summary> Отступы и переносы </summary>
  <p>
   В качестве единицы отступа используется четыре пробела. Точное построение отступов не определено, но символ табуляции должен быть установлен на восемь пробелов, а не на четыре;
@@ -67,6 +68,7 @@ is a violent psychopath who knows where you live." (С) Martin Golding
   - предпочтительнее перенос на более высоком уровне выражения, чем на низком;
   - предпочтительно выравнивание новой строки выражения так, чтобы её начало было с тем же отступом, как и на предыдущей строке;
   - если предыдущие правила приведут к снижению читаемости кода, предлагается использовать отступ в восемь пробелов, например:
+
    ```java
    function(longExpression1, longExpression2, longExpression3,
             longExpression4, longExpression5);
@@ -74,15 +76,19 @@ is a violent psychopath who knows where you live." (С) Martin Golding
                    function2(longExpression2,
                              longExpression3));
    ```
+
    И ещё одно сравнение. Первый вариант предпочтительнее, поскольку перенос производится на более высоком уровне выражения:
+
    ```java
    longName1 = longName2 * (longName3 + longName4 - longName5)
                + 4 * longname6; // ПРЕДПОЧТИТЕЛЬНЕЕ
    longName1 = longName2 * (longName3 + longName4
                             - longName5) + 4 * longname6; // ИЗБЕГАЙТЕ
    ```
+
    Основной идеей оформления отступами является увеличение читаемости кода, поэтому данные правила не являются строгими;
   - при записи тернарного оператора допускается три типа переноса:
+  
    ```java
    alpha = (aLongBooleanExpression) ? beta : gamma;
    alpha = (aLongBooleanExpression) ? beta
@@ -93,6 +99,7 @@ is a violent psychopath who knows where you live." (С) Martin Golding
    ```
  </p>
  </details>
+
  <details> <summary> Комментарии </summary>
  <p>
   Комментарии в программах делятся на три основных типа:
